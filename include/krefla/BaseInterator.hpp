@@ -3,13 +3,9 @@
 template<class T>
 struct BaseInterator
 {   
-    protected:
-        T data;
-        IInterator* next;
+    T data;
+    BaseInterator<T>* next;
+
     public:
-        virtual void go_next() = 0;
-        virtual IInterator* get_next() const = 0;
-        virtual void set_next(IInterator*) = 0;
-        virtual T value() const = 0; 
-        virtual void set_value(T) = 0; 
+        virtual BaseInterator<T>* get_next() = 0;
 };

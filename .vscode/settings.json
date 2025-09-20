@@ -16,6 +16,9 @@
         "streambuf": "cpp",
         "type_traits": "cpp",
         "utility": "cpp",
-        "system_error": "cpp"
+        "system_error": "cpp",
+        "array": "cpp",
+        "functional": "cpp",
+        "tuple": "cpp"
     }
 }
